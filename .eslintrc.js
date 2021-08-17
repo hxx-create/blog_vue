@@ -5,7 +5,7 @@ module.exports = {
     node: true,
     es6: true
   },
-  extends: ["eslint:recommended", "plugin:vue/essential", "@vue/prettier"],
+  extends: ["eslint:recommended", "plugin:vue/essential"],
   rules: {
     "generator-star-spacing": "off",
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
