@@ -1,13 +1,16 @@
 import Vue from 'vue'
 import App from './App.vue'
-// 1.1导入路由的包
-import VueRouter from 'vue-router';
-// 1.2安装路由
-Vue.use(VueRouter);
-// 1.3 导入自己的 router.js 模块
-import router from './router/router.js';
+import router from './router';
+import ElementUI from 'element-ui';
+import store from './store/index'
+import './assets/iconfont/iconfont.css'
+import 'element-ui/lib/theme-chalk/index.css';
+
+Vue.use(ElementUI);
 Vue.config.productionTip = false
 
 new Vue({
+  router,
+  store,
   render: h => h(App),
 }).$mount('#app')

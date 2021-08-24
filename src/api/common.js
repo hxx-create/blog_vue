@@ -9,18 +9,38 @@ import request from '@/utils/request'
  *
  */
 // 例如(post)：
- export function updateBook(obj) {
+ export function login(obj) {
    return request({
-     url: '/book/update',      // url = base url + request url
+     url: '/api/login', 
      method: 'post',
-     data: obj,    //----------------->>>区别
+     data: obj,   
    })
  }
-// 例如(get)：
- export function getBookList(obj) {
+ export function register(obj) {
    return request({
-     url: '/book/list',      // url = base url + request url
+     url: '/api/register',  
      method: 'post',
-     params: obj,    //----------------->>>区别
+     data: obj,   
    })
+}
+export function getUserData(obj) {
+  return request({
+    url: '/api/user/info',  
+    method: 'get',
+    params: obj,   
+  })
+}
+export function getArticleList(obj) {
+  return request({
+    url: '/api/articleList',  
+    method: 'get',
+    params: obj,   
+  })
+}
+export function getArticleDet(obj) {
+  return request({
+    url: '/api/articleDetail',  
+    method: 'get',
+    params: obj,   
+  })
 }
