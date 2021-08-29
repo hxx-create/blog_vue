@@ -1,11 +1,11 @@
 
 
-export default[
-  {
-    path: '/',
-    name: 'Login',
-    redirect:'/home'
-  },
+export default [
+  // {
+  //   path: '/',
+  //   name: 'Login',
+  //   redirect:'/home'
+  // },
   {
     path: '/login',
     name: 'Login',
